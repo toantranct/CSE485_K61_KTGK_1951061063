@@ -7,12 +7,12 @@
     $sql = "delete from drugs where id ='$id'";
     echo $sql;
     $result=mysqli_query($conn,$sql);
-    if($result>0){
+    if($result){
         echo "<script> alert('Xoá thành công'); </script>"; 
         header("Location: index.php");
     }else{
-        echo "Loi";
+        header("Location: 404.php");
     }
-
     mysqli_close($conn);
+
 ?>

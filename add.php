@@ -33,13 +33,16 @@ include 'connect.php';
         else {
             header("Location: 404.php");
         }
-        
     }
 
     ?>
     <div class="container">
-        <h1>Sửa thông tin thuốc</h1>
-        <form action="" method="POST">
+        <div class="card">
+            <div class="card-header">
+                <h1 style="text-align:center;">Thêm thông tin thuốc</h1>
+            </div>
+            <div class="card-body">
+            <form action="" method="POST">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-6">
@@ -116,6 +119,8 @@ include 'connect.php';
             </div>
 
         </form>
+            </div>
+        </div>
     </div>
 
 </main>
